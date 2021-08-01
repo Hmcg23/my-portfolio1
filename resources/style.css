@@ -1,13 +1,73 @@
-.home-container {
-    display: flex
+* {
+    color: #363636;
+    font-family: Gilroy;
+    
+
 }
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../../../../Downloads/Gilroy-FREE.zip);
+    font-family: 'Gilroy Bold';
+    src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Bold.ttf);
+    font-family: 'Gilroy Heavy';
+    src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Heavy.ttf);
+    font-family: 'Gilroy Medium';
+    src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Medium.ttf);
+    font-family: 'Gilroy Regular';
+    src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Regular.ttf);
+    font-family: 'Gilroy Light';
+    src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Light.ttf);
+}
+
 body {
-    background-image: url("./images/Background.png");
+  /* The image used */
+  background-image: 
+  linear-gradient(rgb(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+  url("./images/Background.jpg");
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+p {
+    font-size: 36px;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+ul {
+    background-color: #064497;
+}
+
+nav li {
+    font-family: 'Gilroy-Bold';
+    font-size: 36px;
+    color: white;
+    display: inline;
+    margin: 1vw;
+    background-color: #064497;
+
+}
+
 #my-photo {
     max-width: 20%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
 
+}
+
+.text {
+    text-align: center;
+}
+
+.blue {
+    color: #064497;
+    font-weight: bold;
 }
