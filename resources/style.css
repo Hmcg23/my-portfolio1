@@ -45,30 +45,30 @@ h1 {
 
 nav {
     background-color: #064497;
-    text-align: right;
-    /* border styles */
-    border: 15px solid #064497;
-    border-bottom-left-radius: 3vw;
-    border-bottom-right-radius: 3vw;
-    border-top-right-radius: 3vw;
+    border: 5px solid #064497;
+    border-radius: 0.5vw 100px 100px 200px;
     margin: 1vw;
-    display: flex;
+    max-width: fit-content;
+    display: block;
+    margin-left: auto;
+
 }
 
-nav span {
+nav ul li {
     font-family: 'Gilroy-Bold';
     font-size: 36px;
     color: white;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
     background-color: #064497;
+    display: inline-block;
 }
 
 #my-photo {
-    max-width: 20%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5vw 50% 50% 50%;
+    margin: 0 auto;
 }
 
 .text {
