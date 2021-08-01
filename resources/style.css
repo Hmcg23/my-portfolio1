@@ -19,6 +19,7 @@
     font-family: 'Gilroy Light';
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Light.ttf);
 }
+/* Background Image */
 
 body {
   /* The image used */
@@ -31,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Basic Text Styling */
 
 p {
     font-size: 36px;
@@ -41,18 +43,24 @@ h1 {
 
 }
 
-ul {
+nav {
     background-color: #064497;
+    text-align: right;
+    /* border styles */
+    border: 15px solid #064497;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    border-top-right-radius: 3vw;
+    margin: 1vw;
+    display: flex;
 }
 
-nav li {
+nav span {
     font-family: 'Gilroy-Bold';
     font-size: 36px;
     color: white;
-    display: inline;
-    margin: 1vw;
+    margin: 0 1vw;
     background-color: #064497;
-
 }
 
 #my-photo {
