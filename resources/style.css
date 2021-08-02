@@ -1,6 +1,9 @@
 * {
     color: #363636;
     font-family: Gilroy;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     
 
 }
@@ -31,7 +34,7 @@ html {
       background-size: cover;
   }
 
-/* Basic Text Styling */
+/* Basic Text Styling and more*/
 
 p {
     font-size: 36px;
@@ -52,25 +55,33 @@ nav {
     display: table;
     margin-left: auto;
     padding: 0;
+    position: fixed;
+    right: 0%;
+    z-index: 1000;
 }
 
 ul li{
     display: inline-block;
+    margin: 5px;
 }
 
 nav ul li a{
     font-family: 'Gilroy-Bold';
     font-size: 2vw;
     color: white;
-    margin: 0 0.5vw;
+    margin: 0.5vw;
     text-decoration: none;
+}
+
+#first-child {
+    margin-left: 2vw;
 }
 
 /* Paper Plane */
 
 .paper-plane {
-    height: 150px;
-    top: 50%;
+    height: 20vh;
+    top: 10%;
     left: -200px;
     overflow: hidden;
     position: absolute;
@@ -120,4 +131,44 @@ nav ul li a{
     display: block;
     width: 15%;
     margin: 0 auto;
+}
+
+/* Test Sections */
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; 
+}
+
+
+#home {
+    height: 100vh;
+}
+
+#about-me, #projects, #contact-me {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me {
+    background-color: blue;
+    opacity: 0.5;
+}
+
+#projects {
+    background-color: red;
+    opacity: 0.5;
+}
+
+#contact-me {
+    background-color: green;
+    opacity: 0.5;
 }
