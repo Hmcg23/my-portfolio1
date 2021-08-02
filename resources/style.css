@@ -47,32 +47,32 @@ h1 {
 
 nav {
     background-color: #064497;
-    border: 0.5vw solid #064497;
+    border: calc(0.5vw - 2px) solid #064497;
     border-radius: 0.5vw 100px 100px 200px;
     margin: 1vw;
     max-width: fit-content;
-    display: block;
     margin-left: auto;
-
-}
-
-ul {
     padding: 0;
-    padding-left: calc(1.5vw + 2px);
 }
 
-nav ul li {
+ul li{
+    display: inline-block;
+}
+
+nav ul li a{
     font-family: 'Gilroy-Bold';
     font-size: 2vw;
     color: white;
     margin: 0 0.5vw;
-    display: inline-block;
+    text-decoration: none;
 }
 
 /* Main Section */
 
-#home-container {
+#home {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #my-photo {
@@ -81,6 +81,7 @@ nav ul li {
     height: 30%;
     display: block;
     margin: 2vw;
+    max-width: 100%;
 }
 
 .blue {
@@ -90,11 +91,11 @@ nav ul li {
 
 #text-container {
     display: flex;
+    max-width: 40%;
     flex-direction: column;
 }
 
 #text-container p {
-    max-width: 40%;
     font-size: 2.5vw;
 }
 
@@ -102,4 +103,10 @@ nav ul li {
     margin: 0;
     font-size: 5vw;
 
+}
+
+#darrow {
+    display: block;
+    width: 15%;
+    margin: 0 auto;
 }
