@@ -1,6 +1,6 @@
 * {
     color: #363636;
-    font-family: Gilroy;
+    font-family: Gilroy, Rubik, Monerrat, Roboto, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -11,15 +11,15 @@
 @font-face {
     font-family: Gilroy;
     src: url(../../../../Downloads/Gilroy-FREE.zip);
-    font-family: 'Gilroy Bold', Roboto, sans-serif;
+    font-family: 'Gilroy Bold', Rubik, Monerrat, Roboto, sans-serif;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Bold.ttf);
-    font-family: 'Gilroy Heavy', Roboto, sans-serif;;
+    font-family: 'Gilroy Heavy', Rubik, Monerrat, Roboto, sans-serif;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Heavy.ttf);
-    font-family: 'Gilroy Medium', Roboto, sans-serif;;
+    font-family: 'Gilroy Medium', Rubik, Monerrat, Roboto, sans-serif;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Medium.ttf);
-    font-family: 'Gilroy Regular', Roboto, sans-serif;;
+    font-family: 'Gilroy Regular', Rubik, Monerrat, Roboto, sans-serif;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Regular.ttf);
-    font-family: 'Gilroy Light', Roboto, sans-serif;;
+    font-family: 'Gilroy Light', Rubik, Monerrat, Roboto, sans-serif;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Light.ttf);
 }
 /* Background Image */
@@ -67,11 +67,12 @@ ul li{
 }
 
 nav ul li a{
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Bold', Rubik, Monerrat, Roboto, sans-serif;
     font-size: 2vw;
     color: white;
     margin: 0.5vw;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #first-child {
