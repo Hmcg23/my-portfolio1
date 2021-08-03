@@ -11,15 +11,15 @@
 @font-face {
     font-family: Gilroy;
     src: url(../../../../Downloads/Gilroy-FREE.zip);
-    font-family: 'Gilroy Bold';
+    font-family: 'Gilroy Bold', Roboto, sans-serif;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Bold.ttf);
-    font-family: 'Gilroy Heavy';
+    font-family: 'Gilroy Heavy', Roboto, sans-serif;;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Heavy.ttf);
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Medium', Roboto, sans-serif;;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Medium.ttf);
-    font-family: 'Gilroy Regular';
+    font-family: 'Gilroy Regular', Roboto, sans-serif;;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Regular.ttf);
-    font-family: 'Gilroy Light';
+    font-family: 'Gilroy Light', Roboto, sans-serif;;
     src: url(../../../../Downloads/gilroy-bold-cufonfonts/Gilroy-Light.ttf);
 }
 /* Background Image */
