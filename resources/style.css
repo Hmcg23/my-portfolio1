@@ -95,12 +95,12 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #my-photo {
     border-radius: 0.5vw 50% 50% 50%;
     width: 30%;
-    height: 30%;
     display: block;
     margin: 2vw;
     max-width: 100%;
@@ -129,7 +129,7 @@ nav ul li a{
 
 #darrow {
     display: block;
-    width: 15%;
+    width: 30%;
     margin: 0 auto;
 }
 
