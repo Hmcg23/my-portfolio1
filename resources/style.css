@@ -144,6 +144,7 @@ nav ul li a{
         position: fixed;
         margin: 0;
         left: 2vh;
+        top: 2vh
     }
 
     .nav-active {
