@@ -96,12 +96,10 @@ nav ul li a{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        min-height: 8vh;
+        top: 4vh;
         margin: 0;
         padding: 0;
-        border-radius: 0;
-        position:relative;
-        background: none;
+        position: relative;
         border: none;
 
     }
@@ -112,24 +110,26 @@ nav ul li a{
         width: 50%;
         justify-content: space-around;
         right: 0px;
-        height: 100vh;
+        height: 90vh;
         top: 0vh;
         background-color: #064497;
         display: flex;
         flex-direction: column;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateX(150%);
         transition: transform 0.5s ease-in-out;
+        left: 30vh;
+        border-radius: 1vh 10vh 10vh 10vh;
     }
 
     .nav-links li {
         list-style: none;
         font-family: 'Gilroy Medium';
-        opacity: 0;
+        font-size: 20px;
     }
 
     .nav-links a {
-        font-size: 14px;
+        font-size: 40px;
         color: white;
         text-decoration: none;
         font-family: 'Gilroy Medium';
@@ -137,13 +137,13 @@ nav ul li a{
     }
 
     .burger {
-        display: inline;
+        display: block;
         background-color:#064497;
         padding: 5px;
         border-radius: 1px 50% 50% 50%;
-        position: absolute;
+        position: fixed;
         margin: 0;
-        right: 1vh;
+        right: 2.5vh;
     }
 
     .nav-active {
@@ -163,13 +163,13 @@ nav ul li a{
     }
 
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
     }
     .toggle .line2 {
         opacity: 0;
     }
     .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
 
     }
 }

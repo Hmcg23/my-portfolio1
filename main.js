@@ -21,7 +21,7 @@ tween.add(
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelector('.navlinks li')
+    const navLinks = document.querySelectorAll('.navlinks li')
     burger.addEventListener('click', () => {
         // Toggle Nav
         nav.classList.toggle('nav-active');
