@@ -107,31 +107,30 @@ nav ul li a{
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         display: flex;
         width: 50%;
         justify-content: space-around;
         right: 0px;
         height: 90vh;
-        top: 0vh;
+        top: 4vh;
         background-color: #064497;
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateX(150%);
         transition: transform 0.5s ease-in-out;
-        left: 30vh;
+        right: 5vh;
         border-radius: 1vh 10vh 10vh 10vh;
     }
 
     .nav-links li {
         list-style: none;
-        font-family: 'Gilroy Medium';
-        font-size: 20px;
+        font-size: 2vh;
     }
 
     .nav-links a {
-        font-size: 40px;
+        font-size: 4vh;
         color: white;
         text-decoration: none;
 
@@ -144,7 +143,7 @@ nav ul li a{
         border-radius: 1px 50% 50% 50%;
         position: fixed;
         margin: 0;
-        right: 2.5vh;
+        left: 2vh;
     }
 
     .nav-active {
