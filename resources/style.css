@@ -32,7 +32,8 @@ html {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-  }
+      overflow-x: hidden;
+  } 
 
 /* Basic Text Styling and more*/
 
@@ -77,14 +78,110 @@ nav ul li a{
     margin-left: 2vw;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        position:relative;
+        background: none;
+        border: none;
+
+    }
+
+    .nav-links {
+        position: absolute;
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        right: 0px;
+        height: 100vh;
+        top: 0vh;
+        background-color: #064497;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+        list-style: none;
+        font-family: 'Gilroy Medium';
+        opacity: 0;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Gilroy Medium';
+
+    }
+
+    .burger {
+        display: inline;
+        background-color:#064497;
+        padding: 5px;
+        border-radius: 1px 50% 50% 50%;
+        position: absolute;
+        margin: 0;
+        right: 1vh;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+
+    }
+}
 /* Paper Plane */
 
 .paper-plane {
     height: 20vh;
     top: 10%;
     left: -200px;
-    overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
+    min-height: 8vh;
 }
 
 
