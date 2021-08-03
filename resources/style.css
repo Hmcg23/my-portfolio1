@@ -57,7 +57,7 @@ nav {
     margin-left: auto;
     padding: 0;
     position: fixed;
-    right: 0%;
+    right: 2%;
     z-index: 1000;
 }
 
@@ -92,6 +92,8 @@ nav ul li a{
 }
 
 @media screen and (max-width:768px) {
+
+    /* Nav Bar */
     nav {
         display: flex;
         justify-content: space-around;
@@ -227,6 +229,32 @@ nav ul li a{
     display: block;
     width: 30%;
     margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+    #home-container {
+        flex-direction: column;
+    }
+    #my-photo {
+        width: 40%;
+    }
+
+    #text-container {
+        max-width: 60%;
+    }
+
+    #text-container p {
+        font-size: 4vw;
+        align-self: center;
+        text-align: center;
+    }
+    
+    #text-container h1 {
+        font-size: 8vw;
+        text-align: center;
+    
+    }
+    
 }
 
 /* Test Sections */
