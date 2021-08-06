@@ -262,7 +262,7 @@ nav ul li a{
 
 /* About Me Section */
 
-#about-container {
+#about-me {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,7 +270,12 @@ nav ul li a{
 
 #my-photo2 {
     height: 100%;
+}
 
+#text-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #my-photo-mobile {
@@ -292,17 +297,16 @@ nav ul li a{
     #about-container {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     #text-container2 p {
-        font-size: 3.9vh;
+        font-size: 3vh;
         text-align: center;
     }
 
     #text-container2 h1 {
         font-size: 4vh;
-        text-align: center;
-        display: table;
+        display: inline-block;
+        align-self: center;
     }
 
     #my-photo2 {
@@ -310,14 +314,9 @@ nav ul li a{
     }
 
     #my-photo-mobile {
-        display: block;
-        width: 20%;
+        display: inline-block;
+        width: 70%;
         height: auto;
-    }
-
-    #about-mobile-container {
-        display: flex;
-        flex-direction: row;
     }
 }
 /* Snap to Scroll */
