@@ -26,7 +26,7 @@
 
 html {
     /* The image used */
-      background: radial-gradient(rgb(255, 255, 255, 0.5), rgba(6, 68, 151, 0.1)), 
+      background: radial-gradient(rgb(255, 255, 255, 0.6), rgba(6, 68, 151, 0.4)), 
       url(./images/Background.jpg) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -165,12 +165,14 @@ nav ul li a{
     }
 
     .toggle .line1 {
+        border-radius: 10px;
         transform: rotate(-45deg) translate(-6px, 6px);
     }
     .toggle .line2 {
         opacity: 0;
     }
     .toggle .line3 {
+        border-radius: 10px;
         transform: rotate(45deg) translate(-6px, -6px);
 
     }
@@ -188,7 +190,7 @@ nav ul li a{
 
 
 
-/* Main Section */
+/* Home Section */
 
 #home-container {
     display: flex;
@@ -223,7 +225,6 @@ nav ul li a{
 #text-container h1 {
     margin: 0;
     font-size: 5vw;
-
 }
 
 #darrow {
@@ -233,7 +234,7 @@ nav ul li a{
     transform: rotate(-90deg);
 }
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     #home-container {
         flex-direction: column;
     }
@@ -259,7 +260,67 @@ nav ul li a{
     
 }
 
-/* Scroll to Snap*/
+/* About Me Section */
+
+#about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-photo2 {
+    height: 100%;
+
+}
+
+#my-photo-mobile {
+    display: none;
+}
+
+#text-container2 h1{
+    font-size: 10vh;
+    color: #064497;
+}
+#text-container2 p {
+    font-size: 5vh;
+    max-width: 98%;
+}
+
+@media only screen and (max-width:768px) {
+
+
+    #about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #text-container2 p {
+        font-size: 3.9vh;
+        text-align: center;
+    }
+
+    #text-container2 h1 {
+        font-size: 4vh;
+        text-align: center;
+        display: table;
+    }
+
+    #my-photo2 {
+        display: none;
+    }
+
+    #my-photo-mobile {
+        display: block;
+        width: 20%;
+        height: auto;
+    }
+
+    #about-mobile-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+/* Snap to Scroll */
 
 body {
     width: 100vw;
@@ -276,18 +337,12 @@ main {
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
     flex: none;
 }
 
-#about-me {
-    background-color: rgba(0, 128, 0, 0.5);
-}
 #projects {
     background-color: rgba(0, 45, 128, 0.5);
 }
