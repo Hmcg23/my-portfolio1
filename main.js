@@ -1,4 +1,5 @@
 const paperPlane = document.getElementsByClassName('paper-plane');
+const darrow = document.getElementById('darrow');
 
 
 const flightPath = {

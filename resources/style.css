@@ -231,7 +231,14 @@ nav ul li a{
     display: block;
     width: 30%;
     margin: 0 auto;
+    animation: float 1s ease-in-out infinite;
     transform: rotate(-90deg);
+}
+
+@keyframes float {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 @media only screen and (max-width:768px) {
