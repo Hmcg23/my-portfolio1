@@ -300,6 +300,7 @@ nav ul li a{
 }
 
 @media only screen and (max-width: 1150px) {
+
     #text-container2 p {
         font-size: 3.5vw;
     }
@@ -311,22 +312,14 @@ nav ul li a{
 
 @media only screen and (max-width:768px) {
 
-
-    #about-container {
-        display: grid;
-        grid-template-rows: repeat(10, 1fr);
-        grid-template-columns: repeat(6, 1fr);
-
-    }
     #text-container2 p {
         font-size: 2.7vh;
         text-align: center;
+        grid-area: 1 / 6 / 10 / 7;
     }
 
     #text-container2 h1 {
         font-size: 8vh;
-        display: inline-block;
-        align-self: center;
     }
 
     #my-photo2 {
@@ -334,22 +327,22 @@ nav ul li a{
     }
 
     #my-photo-mobile {
-        display: inline-block;
+        display: block;
         width: 35%;
-        height: auto;
         animation: floating-photo 3s ease-in-out infinite;
+        grid-area: 1 / 1 / 6 / 6;
     }
 }
 
 @keyframes floating-photo {
     0% {
-         transform: rotate(-10deg);
+         transform: rotate(-5deg) translate(0,  0px);
     }
     50%  {
-            transform: rotate(10deg);
+            transform: rotate(5deg) translate(0, -30px);
     }
-    100%   {
-             transform: rotate(-10deg);
+    100%   { 
+             transform: rotate(-5deg) translate(0, -0px);
     }   
 }
 /* Snap to Scroll */
@@ -370,9 +363,6 @@ body {
 section {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     scroll-snap-align: start;
 }
 
