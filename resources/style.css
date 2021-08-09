@@ -237,7 +237,7 @@ nav ul li a{
 
 @keyframes float {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
+    50%  { transform: translate(0, 30px); }
     100%   { transform: translate(0, -0px); }   
 }
 
@@ -277,6 +277,7 @@ nav ul li a{
 
 #my-photo2 {
     height: 100%;
+    animation: float 2s ease-in-out infinite;
 }
 
 #text-container2 {
@@ -312,8 +313,10 @@ nav ul li a{
 
 
     #about-container {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+
     }
     #text-container2 p {
         font-size: 2.7vh;
@@ -334,7 +337,20 @@ nav ul li a{
         display: inline-block;
         width: 35%;
         height: auto;
+        animation: floating-photo 3s ease-in-out infinite;
     }
+}
+
+@keyframes floating-photo {
+    0% {
+         transform: rotate(-10deg);
+    }
+    50%  {
+            transform: rotate(10deg);
+    }
+    100%   {
+             transform: rotate(-10deg);
+    }   
 }
 /* Snap to Scroll */
 
@@ -344,19 +360,20 @@ body {
     margin: 0;
 }
 
-main {
+.container {
     width: 100%;
     height: 100%;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    display: flex;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 section {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     scroll-snap-align: start;
-    flex: none;
 }
 
 #projects {
