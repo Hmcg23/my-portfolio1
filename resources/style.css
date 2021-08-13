@@ -376,6 +376,17 @@ nav ul li a{
     z-index: -1;
 }
 
+.projects-container-programming img {
+    filter: brightness(30%);
+}
+
+.projects-container-programming {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .project-box {
     width: 30%;
     height: 30%;
@@ -389,35 +400,36 @@ nav ul li a{
 .project-box p {
     grid-area: 2 / 3 / span 2 / span 6;
     color: white;
-    font-size: 2.4vw;
+    font-size: 5vh;
     text-align: center;
     font-family: 'Gilroy Regular', Rubik, Monerrat, Roboto, sans-serif;
     font-weight: 600;
-    line-height: 3vw;
+    line-height: 5vh;
 }
 
 #github {
     grid-area: 4 / 3 / span 1 / span 1;
     color: white;
-    font-size: 5vw;
+    font-size: 10vh;
     justify-self: center;
 }
 
 #external-link {
     grid-area: 4 / 8 / span 1 / span 1;
     color: white;
-    font-size: 5vw;
+    font-size: 10vh;
     justify-self: center;
 }
 
-.projects-container-programming {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+@media only screen and (max-width:768px) {
+    .project-box {
+        width: 90%;
+        height: 90%;
+    }
 
-.projects-container-programming img {
-    filter: brightness(30%);
+    #projects img {
+        border-radius: 10vw;
+    }
 }
 /* Snap to Scroll */
 
