@@ -432,7 +432,7 @@ nav ul li a{
     display: grid;
     grid-template: repeat(50, 1fr) / repeat(50, 1fr);
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     padding: 2vw;
 }
 
@@ -445,13 +445,20 @@ nav ul li a{
 }
 
 #design-two{
-    grid-area: 18 / 1 / span 20 / span 20;
+    grid-area: 28 / 1 / span 17 / span 20;
 }
 
 #design-three{
     grid-area: 1 / 31 / span 40 / span 30;
 }
 
+#design-four{
+    grid-area: 28 / 15 / span 24 / span 40;
+}
+
+#design-five {
+    grid-area: 30 / 30 / span 40 / span 25;
+}
 @media only screen and (max-width:768px) {
     .project-box {
         width: 90%;
@@ -485,7 +492,7 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow-y: scroll;
 }
 
@@ -502,5 +509,5 @@ section {
 
 
 #projects {
-    height: 400vh;
+    height: 290vh;
 }
