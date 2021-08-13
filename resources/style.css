@@ -202,9 +202,7 @@ nav ul li a{
 #my-photo {
     border-radius: 0.5vw 50% 50% 50%;
     width: 30%;
-    display: block;
     margin: 2vw;
-    max-width: 100%;
 }
 
 .blue {
@@ -231,13 +229,18 @@ nav ul li a{
     display: block;
     width: 30%;
     margin: 0 auto;
-    animation: float 1s ease-in-out infinite;
+    animation: float 0.7s ease-in-out infinite;
     transform: rotate(-90deg);
+    transition: filter 0.4s ease-in-out;
+}
+
+#darrow:hover {
+    filter: brightness(1.2);
 }
 
 @keyframes float {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 30px); }
+    50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }   
 }
 
@@ -345,6 +348,77 @@ nav ul li a{
              transform: rotate(-5deg) translate(0, -0px);
     }   
 }
+
+
+/* Projects Section */
+#projects h1 {
+    font-size: 8vw;
+    margin-left: 2vw;
+}
+
+#projects h2 {
+    color:#064497;
+    margin-left: 2vw;
+    font-family: 'Gilroy Light', Rubik, Monerrat, Roboto, sans-serif;
+
+}
+
+#projects h3 {
+    font-size: 4vw;
+    text-align: center;
+}
+#projects img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5vw;
+    padding: 2vw;
+    grid-area: 1 / 1 / span 10 / span 10;
+    z-index: -1;
+}
+
+.project-box {
+    width: 30%;
+    height: 30%;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(10, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-box p {
+    grid-area: 2 / 3 / span 2 / span 6;
+    color: white;
+    font-size: 2.4vw;
+    text-align: center;
+    font-family: 'Gilroy Regular', Rubik, Monerrat, Roboto, sans-serif;
+    font-weight: 600;
+    line-height: 3vw;
+}
+
+#github {
+    grid-area: 4 / 3 / span 1 / span 1;
+    color: white;
+    font-size: 5vw;
+    justify-self: center;
+}
+
+#external-link {
+    grid-area: 4 / 8 / span 1 / span 1;
+    color: white;
+    font-size: 5vw;
+    justify-self: center;
+}
+
+.projects-container-programming {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-container-programming img {
+    filter: brightness(30%);
+}
 /* Snap to Scroll */
 
 body {
@@ -366,9 +440,12 @@ section {
     scroll-snap-align: start;
 }
 
-#projects {
-    background-color: rgba(0, 45, 128, 0.5);
-}
+
 #contact-me {
     background-color: rgba(128, 0, 0, 0.5);
+}
+
+
+#projects {
+    height: 400vh;
 }
