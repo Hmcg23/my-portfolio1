@@ -374,13 +374,15 @@ nav ul li a{
     max-width: 100%;
     max-height: 100%;
     border-radius: 5vw;
-    padding: 2vw;
-    grid-area: 1 / 1 / span 10 / span 10;
-    z-index: -1;
 }
+
+/* Programming Section */
 
 .projects-container-programming img {
     filter: brightness(30%);
+    padding: 2vw;
+    grid-area: 1 / 1 / span 10 / span 10;
+    z-index: -1;
 }
 
 .projects-container-programming {
@@ -422,6 +424,32 @@ nav ul li a{
     color: white;
     font-size: 10vh;
     justify-self: center;
+}
+
+/* Graphic Design Section */
+
+.projects-container-design {
+    display: grid;
+    grid-template: repeat(50, 1fr) / repeat(50, 1fr);
+    width: 100%;
+    height: 200vh;
+    padding: 2vw;
+}
+
+.projects-container-design img{
+    padding: 1vw;
+}
+
+#design-one{
+    grid-area: 1 / 1 / span 30 / span 30;
+}
+
+#design-two{
+    grid-area: 18 / 1 / span 20 / span 20;
+}
+
+#design-three{
+    grid-area: 1 / 31 / span 40 / span 30;
 }
 
 @media only screen and (max-width:768px) {
