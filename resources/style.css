@@ -352,20 +352,23 @@ nav ul li a{
 
 /* Projects Section */
 #projects h1 {
-    font-size: 8vw;
+    font-size: 9vh;
     margin-left: 2vw;
 }
 
 #projects h2 {
-    color:#064497;
+    color: white;
     margin-left: 2vw;
     font-family: 'Gilroy Light', Rubik, Monerrat, Roboto, sans-serif;
+    font-size: 2.5vw;
 
 }
 
 #projects h3 {
-    font-size: 4vw;
+    font-size: 5vh;
     text-align: center;
+    padding: 15px;
+    color: #064497;
 }
 #projects img {
     max-width: 100%;
@@ -430,6 +433,18 @@ nav ul li a{
     #projects img {
         border-radius: 10vw;
     }
+
+    #projects h1 {
+        text-align: right;
+        margin-right: 2vw;
+    }
+
+    #projects h2 {
+        text-align: right;
+        margin-right: 2vw;
+    }
+
+
 }
 /* Snap to Scroll */
 
