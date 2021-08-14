@@ -1,9 +1,6 @@
 const paperPlane = document.getElementsByClassName('paper-plane');
 const darrow = document.getElementById('darrow');
 
-gsap.from('#my-photo', { duration: 1, x: '-100%', ease: 'bounce' });
-
-/* Plane Animation
 
 const flightPath = {
     curviness: 1.5,
@@ -48,5 +45,3 @@ const navSlide = () => {
 }
 
 navSlide();
-
-*/
