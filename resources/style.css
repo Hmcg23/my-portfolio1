@@ -46,6 +46,11 @@ h1 {
 
 }
 
+h4 {
+    color: white;
+    padding: 20px;
+    font-size: 20vh;
+}
 /* Nav Bar */
 
 nav {
@@ -540,7 +545,7 @@ nav ul li a{
     justify-content: center;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    background: transparent;
+    background: rgba(89, 187, 252, 0.3);
     width: 90%;
     margin: 0 auto;
     border-radius: 80px;
@@ -594,6 +599,14 @@ nav ul li a{
         padding-top: 20px;
     }
 }
+
+
+/* Copyright Claim */
+
+.copyright h1{
+    text-align: center;
+    font-size: calc(1vw + 2vh);
+}
 /* Snap to Scroll */
 
 body {
@@ -610,7 +623,7 @@ body {
 }
 
 section {
-    min-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
     scroll-snap-align: start;
 }
