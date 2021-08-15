@@ -527,8 +527,13 @@ nav ul li a{
 
 #contact-me img {
     grid-area: 1 / 1 / 11 / 11;
+    animation: plane 2s ease-in-out infinite;
 }
-
+@keyframes plane {
+    0% { transform: translate(-100,  0px); }
+    50%  { transform: translate(100px, 100px); }
+    100%   { transform: translate(100, -0px); }   
+}
 #circle-icon {
     background-color: rgba(6, 68, 151, 0.5);
     width: 20vw;
@@ -537,6 +542,7 @@ nav ul li a{
     grid-area: 8 / 2 / 11 / 11;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+    animation: float 1s ease-in-out infinite;
 }
 
 
