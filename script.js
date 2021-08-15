@@ -1,7 +1,7 @@
 const paperPlane = document.getElementsByClassName('paper-plane');
 const darrow = document.getElementById('darrow');
 
-
+/*
 const flightPath = {
     curviness: 1.5,
     autoRotate: true,
@@ -18,6 +18,7 @@ tween.add(
         ease: Power1.easeInOut
     })
 );
+*/
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -27,6 +28,7 @@ const navSlide = () => {
         // Toggle Nav
         nav.classList.toggle('nav-active');
 
+
         // Animate Links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
@@ -35,9 +37,8 @@ const navSlide = () => {
             link.style.animation = `navLinkFade 0.5s ease forwards ${index /7 + 1.5}s`;
         }
         });
-        // Burger Animation
+        // Burger and Cover Animation
         burger.classList.toggle('toggle');
-
     });
 
 
