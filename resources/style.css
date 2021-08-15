@@ -279,7 +279,7 @@ nav ul li a{
 }
 
 #my-photo2 {
-    height: 100%;
+    height: calc(20vw + 50vh);
     animation: float 2s ease-in-out infinite;
 }
 
@@ -287,6 +287,8 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    justify-content: center;
 }
 
 #my-photo-mobile {
@@ -294,12 +296,12 @@ nav ul li a{
 }
 
 #text-container2 h1{
-    font-size: 10vh;
+    font-size: calc(5vw + 4vh);
     color: #064497;
 }
 #text-container2 p {
     font-size: 4vh;
-    max-width: 98%;
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -380,10 +382,6 @@ nav ul li a{
 /* Programming Section */
 
 
-#projects {
-    height: 280vh;
-}
-
 .projects-container-programming img {
     filter: brightness(30%);
     padding: 2vw;
@@ -400,7 +398,7 @@ nav ul li a{
 
 .project-box {
     width: 30%;
-    height: 50vh;
+    height: auto;
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(10, 1fr);
     justify-items: center;
@@ -439,6 +437,7 @@ nav ul li a{
     grid-template: repeat(50, 1fr) / repeat(50, 1fr);
     width: 100%;
     height: 150vh;
+    margin-bottom: 2%;
 }
 
 .projects-container-design img{
@@ -465,7 +464,8 @@ nav ul li a{
 #design-five {
     grid-area: 2 / 30 / span 1 / span 20;
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:2500px) {
+
     .project-box {
         width: 90%;
         height: 90%;
@@ -491,13 +491,12 @@ nav ul li a{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: auto;
+        height: auto;
     }
     .projects-container-design img{
         width: 90%;
         padding: 2vw;
-    }
-    #projects {
-        height: 650vh;
     }
 
 }
@@ -512,13 +511,13 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow-y: scroll;
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     scroll-snap-align: start;
 }
 
@@ -526,3 +525,4 @@ section {
 #contact-me {
     background-color: rgba(300, 0, 0, 0.5);
 }
+
