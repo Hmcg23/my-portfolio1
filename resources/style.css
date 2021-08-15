@@ -504,7 +504,6 @@ nav ul li a{
 
 /* Contact Me */
 
-
 .plane-and-circle {
     display: grid;
     grid-template: repeat(20, 1fr) / repeat(20, 1fr);
@@ -517,7 +516,7 @@ nav ul li a{
 #contact-me h1 {
     text-align: center;
     font-size: 15vh;
-    grid-area: 7 / 10 / 11 / 11;
+    grid-area: 9 / 5 / 11 / 20;
     z-index: 1;
 }
 
@@ -544,7 +543,7 @@ nav ul li a{
     background: transparent;
     width: 90%;
     margin: 0 auto;
-    border-radius: 80px 0 80px 80px;
+    border-radius: 80px;
 
 }
 
@@ -552,10 +551,48 @@ nav ul li a{
     font-size: 4vw;
     text-align: center;
     padding: 4vh;
+    font-weight: 500;
 }
 
 #copy-text {
-    border-left: #064497 solid 20px;
+    border-left: #064497 solid 1vh;
+}
+
+@media only screen and (max-width: 1150px) {
+    #contact-me h1 {
+        text-align: center;
+        font-size: 15vw;
+        grid-area: 2 / 4 / 11 / -1;
+    }
+
+    #contact-me h2 {
+        text-align: center;
+        font-size: 5vw;
+        max-width: 100%;
+        align-items: center;
+        padding: 10vw 0;
+    }
+
+    #contact-me img {
+        grid-area: 1 / 1 / -1 / -1;
+    }
+
+    #circle-icon {
+        grid-area: 9 / 11 / -1 / -1;
+        transform: rotate(90deg);
+    }
+
+    .email-text-container {
+        flex-direction: column;
+        padding: 10vw;
+    
+    }
+
+    #copy-text {
+        border-left: 0;
+        border-top: #064497 solid 1vh;
+        padding-top: 20px;
+    }
 }
 /* Snap to Scroll */
 
