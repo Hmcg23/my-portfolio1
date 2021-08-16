@@ -472,7 +472,7 @@ nav ul li a{
 #design-five {
     grid-area: 2 / 30 / span 1 / span 20;
 }
-@media only screen and (max-width:2500px) {
+@media only screen and (max-width:1024px) {
 
     .project-box {
         width: 90%;
@@ -572,6 +572,10 @@ nav ul li a{
 
 #copy-text {
     border-left: #064497 solid 1vh;
+}
+
+#copy-text:hover {
+    background-color: #064497;
 }
 
 @media only screen and (max-width: 1150px) {
