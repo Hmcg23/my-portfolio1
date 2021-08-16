@@ -574,10 +574,6 @@ nav ul li a{
     border-left: #064497 solid 1vh;
 }
 
-#copy-text:hover {
-    background-color: #064497;
-}
-
 @media only screen and (max-width: 1150px) {
     #contact-me h1 {
         text-align: center;
