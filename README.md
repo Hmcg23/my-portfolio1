@@ -1,8 +1,8 @@
 # 👋🏾 Hudson M
 
-**Description**
+## 🗣 Description
 
-- An old portfolio website that I created!
+- An old portfolio website that I created! This project is very old, and I plan on making an improved portfolio website sometime in the future.
 
 [<img src="./resources/images/Website Screenshot.png"/>](website)
 
